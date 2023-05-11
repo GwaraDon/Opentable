@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RestaurantCard() {
   return (
     <div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer">
@@ -7,7 +9,9 @@ export default function RestaurantCard() {
         className="w-full h-36"
       />
       <div className="p-1">
-        <h3 className="font-bold text-2xl mb-2">Milestones Grill</h3>
+        <h3 className="font-bold text-2xl mb-2">
+          <Link href="/restaurant/slug">Milestones Grill</Link>
+        </h3>
         <div className="flex items-start">
           <div className="flex mb-2">*****</div>
           <p className="ml-2">77 reviews</p>
